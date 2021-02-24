@@ -1,0 +1,387 @@
+.headstart
+    //position: absolute
+    background: #FFF
+    //top: 0
+    //z-index: 999
+
+.header
+    list-style: none
+    margin: 0 auto !important
+    font-size: 15px
+    z-index: 99999
+    padding: 10px 0
+    position: relative
+    //box-shadow: 0 0 10px rgba(0,0,0,0.1)
+    .menulist
+        letter-spacing: initial
+    ul
+        float: right
+        text-align: right
+        padding: 0
+        text-transform: uppercase
+        li.current-menu-item
+            a
+                color: $red
+            a:after
+                content: ''
+                background: $red
+                height: 2px
+                width: 32px
+                position: absolute
+                left: 0
+                right: 0
+                margin: 0 auto
+                bottom: 2px
+        li
+            display: inline-block
+            padding: 2px 0 2px 30px
+            position: relative
+            a
+                display: block
+                position: relative
+                font-weight: 700
+                color: #000
+            a:hover, a:focus
+                color: $red
+            .sub-menu
+                display: none
+                opacity: 0
+                position: absolute
+                background: #FFF
+                padding: 10px 20px
+                min-width: 200px
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.1)
+                float: right
+                right: -20px
+                li
+                    display: block
+                    padding: 0
+                    a
+                        color: #000
+                        border-bottom: 1px solid #000
+                    a:after
+                        display: none
+                li.current-menu-item
+                    a
+                        color: $red
+                        font-weight: 600
+                    a:after
+                        display: block
+                        left: initial
+                        bottom: 5px
+                        right: 13px
+                li:nth-last-child(1)
+                    a
+                        border-bottom: none
+        li.current-menu-item:hover
+            //a:after
+                background: #000
+        li.buttoned
+            float: right
+            padding: 0 0 0 30px
+            a
+                padding: 2px 50px
+                background: $yellow
+                color: #000
+            a:hover, a:focus
+                background: #000 !important
+                color: #FFF !important
+            a:after
+                display: none
+        li.menu-item-has-children
+            .menu-with-no-link
+                cursor: pointer
+        li.current-menu-item.buttoned
+            a
+                background: $yellow
+            a:hover, a:focus
+                background: nonre
+        li.menu-item-has-children.opened
+            a
+                display: inline-block
+            .sub-menu
+                display: block
+                animation: fadingin 0.5s ease-in-out forwards
+                margin-top: 0
+                padding: 0
+                li
+                    border-top: none
+                    float: none
+                    a
+                        display: block
+                        padding: 0 10px
+        li.menu-item-has-children:after
+            content: "\e259"
+            font-size: 10px
+            font-family: 'Glyphicons Halflings'
+            position: absolute
+            right: -17px
+            top: 3px
+            transform: rotate(0deg)
+            transition: all 0.25s ease-in-out
+        li.menu-item-has-children:hover:after
+            transform: rotate(180deg)
+        li.menu-item-has-children:before
+            content: ""
+            background: #cccccc
+            height: 15px
+            width: 15px
+            position: absolute
+            right: -20px
+            top: 14px
+            border-radius: 50%
+    .logo
+        img
+            //opacity: 0
+            //display: none
+            float: left
+            padding: 6px 0 0
+            width: 70px
+    .lastlist
+        padding-left: 0
+        margin-top: -10px
+        li
+            padding-right: 0
+            a
+                padding: 10px 30px
+                color: #000 
+                background: $yellow
+                font-weight: 700
+            a:hover
+                background: #000
+                color: #FFF
+                box-shadow: 0 0 7px rgba(0,0,0,0.15) inset
+            
+.header.active
+    .logo
+        display: inline-block
+        img
+            display: block
+    .logo
+        position: absolute
+        left: 10px
+        
+.header.container-fluid
+    width: 100%
+
+@keyframes fadingin
+    0%
+        opacity: 0
+    100%
+        opacity: 1
+    
+@media (min-width: 992px)
+    .header
+        #menu-header
+            width: calc(1170px - 120px)
+        ul
+            li
+                .submenu
+                    padding: 0
+                    li a
+                        padding: 10px 20px
+                a
+                    font-size: 14px
+            li.menu-item-has-children
+                margin-right: 20px
+    .headstart
+        box-shadow: 0 0 20px 0 rgba(0,0,0,0.1)
+        width: 100%
+        z-index: 9999
+    .header.active.withbg
+        background: #000
+        box-shadow: 0 0 12px rgba(0,0,0,0.1)
+        height: initial
+    
+@media (max-width: 991px)
+    .headstart
+        width: 100vw
+    body
+        min-height: 100vh
+    body.menuopened
+        overflow: hidden
+        height: 100vh
+    .header 
+        padding: 10px 10px 15px
+        width: 100%
+        ul
+            float: none
+            width: 100%
+            z-index: 99
+            text-align: center
+            li
+                display: block
+                position: relative
+                float: right
+                padding: 0
+                width: 100%
+                padding: 0
+                border-top: 1px solid rgba(0,0,0,0.1)
+                padding: 12.5px
+                a:before
+                    content: ''
+                    height: 1px
+                    background: #000
+                    opacity: 0.1
+                    position: absolute
+                    left: 30px
+                    bottom: 0
+                a:hover:after, a:focus:after
+                    display: none
+            li.current-menu-item
+                a
+                    display: inline-block
+                a:after
+                    display: none
+                    left: 0 !important
+                    right: 0 !important
+                    bottom: 0 !important
+                    height: 3px
+                    left: 12.5px
+            li:nth-last-child(1)
+                padding-right: 10px
+                border-bottom: none
+                a:before
+                    display: none
+            li.buttoned
+                padding: 0 0 0 30px
+                a
+                    background: $yellow
+                    border: none
+                    padding: 10px
+                    color: #FFF !important
+            li.menu-item-has-children
+                .menu-with-no-link
+                    display: inline-block
+                .sub-menu
+                    display: none
+                    transform: rotateX(90deg)
+                    transition: all 0.25s ease-in
+                    margin-top: 10px
+                    height: initial
+                    position: relative
+                    box-shadow: none
+                    float: none
+                    right: 0
+                    height: initial
+                    width: 100vw
+                    margin-left: -12.5px
+                    li
+                        border-top: 1px solid rgba(0,0,0,0.1) !important
+                        border-bottom: none
+                        padding: 10px
+                        a
+                            border-bottom: none
+            li.menu-item-has-children.opened
+                padding-bottom: 0
+                ul:first-of-type
+                    display: block
+                    transform: rotate(0deg)
+            li.menu-item-has-children:before
+                height: 20px
+                width: 20px
+            li.menu-item-has-children:after
+                right: 16px
+                top: 9px
+            li.current-menu-item.buttoned a
+                background: $yellow
+        .menulist
+            float: none !important
+            //transform: translateX(80vh)
+            //transform: translate(100vw)
+            opacity: 0
+            transform-origin: 0 50%
+            width: 100vw
+            transition: all 0.05s ease-in
+            z-index: 9999
+        .menu-header-container
+            position: absolute
+            width: 100%
+            //height: 100vh
+            right: 10px
+            top: 39px
+            background: #FFF
+            text-align: center
+            box-shadow: none //0 0 12px rgba(0,0,0,0.1)
+            //border-top: 1px solid #AAA
+            //padding-top: 10px
+        .backdrop
+            content: ''
+            position: absolute
+            left: 0
+            top: 51px
+            width: 100vw
+            height: 100vh
+            background: rgba(0,0,0,0.1)
+            z-index: 9998
+            display: none
+            opacity: 0
+            transition: display 0.5s ease-in, opacity 0.5s ease-in
+        .logo
+            margin-top: -10px
+            top: 16px
+            img
+                width: 50px
+                display: block !important
+                animation: none !important
+                opacity: 1 !important
+    .header.opened
+        .menulist
+            //transform: rotate(0)
+            opacity: 1
+        .backdrop
+            display: block
+            opacity: 1
+    .hamburger
+        float: right
+        margin-top: 2px
+        img
+            width: 25px
+    .header
+        -webkit-transition: -webkit-transform 0.5s ease-in-out
+        transition: -webkit-transform 0.5s ease-in-out
+        transition: transform 0.5s ease-in-out
+        transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out
+    .header.scroll-up
+        -webkit-transform: translateY(-100px)
+        transform: translateY(-100px)
+        .menulist
+            display: none !important
+    .header.scroll-up.scroll-stay
+        transform: none !important
+    .header.active
+        background: #FFF
+        box-shadow: 0 0 12px rgba(0,0,0,0.1)
+        border-bottom: 1px solid rgba(0,0,0,0.1)
+
+@media (min-width: 768px) and (max-width: 991px)
+    .header
+        .menu-header-container
+            width: 300px
+        ul li a:hover, ul li a:focus
+            color: #000
+
+@media (min-width: 992px) and (max-width: 1199px)
+    .header
+        #menu-header
+            width: calc(970px - 90px)
+        ul li a
+            font-size: 12px
+            line-height: 29px
+        .logo img
+            width: 50px
+
+@media (min-width: 992px) and (max-width: 1089px)
+    .header
+        #menu-header
+            width: calc(920px - 120px)
+
+@media (min-width: 1200px) and (max-width: 1343px)
+    .header
+        #menu-header
+            width: calc(1110px - 120px)
+
+@media (min-width: 1600px)
+    .header
+        #menu-header
+            width: calc(1280px - 120px)

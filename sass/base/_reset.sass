@@ -1,0 +1,272 @@
+.container 
+    padding-right: 15px 
+    padding-left: 15px 
+    margin-right: auto 
+    margin-left: auto 
+    
+*::selection
+    background: rgba(0,0,0,0.2)
+
+*::-moz-selection
+    background: rgba(0,0,0,0.2)
+
+*::-webkit-scrollbar-track
+	background-color: #F6F6F6
+
+*::-webkit-scrollbar
+	width: 12px
+	background-color: #F6F6F6
+
+*::-webkit-scrollbar-thumb
+	background-color: #888
+
+@media (max-width: 767px) 
+    .container
+        width: 100%
+@media (min-width: 768px) and (max-width: 991px) 
+    .container
+        width: 660px
+@media (min-width: 992px) and (max-width: 1089px)
+    .container
+        width: 880px
+@media (min-width: 1090px) and (max-width: 1199px)
+    .container
+        width: 970px
+@media (min-width: 1200px) and (max-width: 1343px)
+    .container
+        width: 1100px
+@media (min-width: 1344px) and (max-width: 1600px)
+    .container
+        width: 1170px
+@media (min-width: 1600px)
+    .container
+        width: 1280px
+
+html, body
+    overflow-x: hidden
+    width: 100%
+    color: #000
+    
+body.modal-open
+    padding-right: 0 !important
+
+p
+    margin: 0 0 10px
+    
+div
+    position: relative
+
+a
+    text-decoration: none !important
+    transition: none 
+    color: inherit    
+a:hover, a:focus, a.linked
+    color: $yellow 
+.bg4
+    a:hover, a:focus, a.linked
+        color: $red
+
+a u
+    color: $yellow
+    b
+        color: #000
+a u:hover
+    color: #000
+    b
+        color: #000
+u
+    a
+        text-decoration: underline !important
+
+hr
+    margin-top: 10px
+    margin-bottom: 10px
+    width: 100%
+    border-color: rgba(0,0,0,0.1)
+hr.dark
+    border-color: #000
+hr.thick
+    border: 6px solid #000
+hr.hr30
+    margin: 30px 0
+
+.imgcont img 
+    width: 100%
+    
+.nomar 
+    margin: 0
+.nomart
+    margin-top: 0
+.nomarb
+    margin-bottom: 0
+
+.nopad 
+    padding-left: 0
+    padding-right: 0
+.nopadleft 
+    padding-left: 0
+.nopadright 
+    padding-right: 0
+
+.pad20
+    padding: 20px
+.pad25
+    padding: 25px
+.pad30
+    padding: 30px
+.pad40
+    padding: 40px
+.pad50
+    padding: 50px
+
+.pad7550
+    padding: 75px 50px
+
+.padt350
+    padding-top: 350px 
+.padt250
+    padding-top: 250px   
+.padt200
+    padding-top: 200px   
+.padt150
+    padding-top: 150px
+.padt125
+    padding-top: 125px
+
+.padb350
+    padding-bottom: 350px 
+.padb250
+    padding-bottom: 250px  
+.padtb150 
+    padding-top: 150px 
+    padding-bottom: 150px   
+.padtb100 
+    padding-top: 100px 
+    padding-bottom: 100px
+.padtb75 
+    padding-top: 75px 
+    padding-bottom: 75px
+.padtb50 
+    padding-top: 50px 
+    padding-bottom: 50px
+.padtb25 
+    padding-top: 25px 
+    padding-bottom: 25px
+
+.padb200
+    padding-bottom: 200px   
+.padb150
+    padding-bottom: 150px
+.padb125
+    padding-bottom: 125px
+.padb100
+    padding-bottom: 100px
+.padb75 
+    padding-bottom: 75px
+.padb50 
+    padding-bottom: 50px
+.padb25 
+    padding-bottom: 25px
+.padt100 
+    padding-top: 100px
+.padt75 
+    padding-top: 75px
+.padt50 
+    padding-top: 50px
+.padt25 
+    padding-top: 25px
+
+.padlr30
+    padding-left: 30px
+    padding-right: 30px
+.padl0r30
+    padding-left: 0
+    padding-right: 30px
+.padl30r0
+    padding-left: 30px
+    padding-right: 0
+
+.martb100 
+    margin-top: 100px 
+    margin-bottom: 100px
+.martb75 
+    margin-top: 75px 
+    margin-bottom: 75px
+.martb50 
+    margin-top: 50px 
+    margin-bottom: 50px
+.martb25 
+    margin-top: 25px 
+    margin-bottom: 25px
+    
+.marb100
+    margin-bottom: 100px
+.marb75
+    margin-bottom: 75px
+.marb50
+    margin-bottom: 50px
+.marb25
+    margin-bottom: 25px
+.mart100
+    margin-top: 100px
+.mart75
+    margin-top: 75px
+.mart50
+    margin-top: 50px
+.mart25
+    margin-top: 25px
+
+@media(min-width: 992px)
+    .col-md-offset-375
+        margin-left: 37.5%
+
+@media(min-width: 992px) and (max-width: 1199px)
+    .padtb150 
+        padding-top: 100px 
+        padding-bottom: 100px   
+    .padtb100 
+        padding-top: 75px 
+        padding-bottom: 75px
+    .padb150
+        padding-bottom: 100px
+    .padb125
+        padding-bottom: 125px
+    .padb100
+        padding-bottom: 75px   
+
+@media (min-width: 768px) and (max-width: 991px) 
+    .nopadsm 
+        padding-left: 0
+        padding-right: 0
+    .pad15sm 
+        padding-left: 15px 
+        padding-right: 15px
+    .pad30sm 
+        padding-left: 30px 
+        padding-right: 30px
+
+        
+@media (max-width: 767px) 
+    html, body
+        min-width: 100vw
+    .nopadxs 
+        padding-left: 0
+        padding-right: 0
+    .padt150xs
+        padding-top: 150px
+    .padt30xs
+        padding-top: 30px
+    .padb30xs 
+        padding-bottom: 30px
+    .pad15xs 
+        padding-left: 15px 
+        padding-right: 15px 
+    .pad30xs 
+        padding-left: 30px 
+        padding-right: 30px 
+    .nopadleft
+        padding-right: 0 
+    .nopadright
+        padding-left: 0
+    .nolsxs
+        letter-spacing: initial

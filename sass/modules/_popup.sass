@@ -1,0 +1,73 @@
+.modal-open .modal
+    padding-right: 0 !important
+    z-index: 100000
+.modal
+    padding-top: 30px
+    padding-bottom: 30px
+    padding-left: 0 !important
+.modal-backdrop
+    background-color: #FFF
+    z-index: 99999
+.modal-backdrop.in
+    opacity: 0.95
+.modal-dialog
+    margin: 0 auto
+.modal-content
+    padding: 75px 100px
+    border-radius: 0
+    border: none
+    background: #FFF
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,.1)
+    box-shadow: 0 0 10px rgba(0,0,0,.1)
+.fade-scale
+    opacity: 0
+    -webkit-transition: all .75s ease-in-out
+    -o-transition: all .75s ease-in-out
+    transition: all .75s ease-in-out
+.fade-scale.in
+    opacity: 1
+.modal-content button
+    position: absolute
+    right: 30px
+    top: 30px
+    opacity: 1 !important
+    border-radius: 55%
+    height: 29px
+    width: 29px
+    outline: none !important
+    z-index: 3
+    background: none !important
+    img
+        height: 20px
+
+#whybird, #why321
+    .imgcont
+        width: 55%
+        margin-left: 22.5%
+        padding-bottom: 50px
+
+@media(min-width: 1200px)
+    .modal-dialog
+        width: 800px
+
+@media(max-width: 767px)
+    .modal
+        padding-top: 0
+        padding-bottom: 0
+    .modal-dialog
+        width: 100%
+        margin: 0
+    .modal-content
+        padding: 60px 20px
+        //background: none
+        //box-shadow: none
+        button
+            top: 15px
+            right: 15px
+        .name
+            width: 75%
+        .position
+            font-size: 12px
+    //.modal-backdrop.in
+        opacity: 1
+        background-color: $graymd

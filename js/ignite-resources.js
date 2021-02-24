@@ -1,0 +1,138 @@
+$(document).ready(function () {
+    var resourcelist = [
+        {
+            "title": "Budget private schools fear closure, pay teachers in rations as funds dry up amid pandemic",
+            "link": "https://theprint.in/india/education/budget-private-schools-fear-closure-pay-teachers-in-rations-as-funds-dry-up-amid-pandemic/481997/",
+            "image": "./img/resources/private-schools.png",
+            "date": 'AUG 2020',
+            "author": 'The Print'
+        },
+        {
+            "title": "321 Education Foundation Is Challenging India\'s Primary Education System",
+            "link": "https://www.jumpstartmag.com/321-foundation-is-taking-on-indias-primary-education-system/",
+            "image": "./img/resources/primary-education.jpg",
+            "date": 'APR 2020',
+            "author": 'JumpStart'
+        },
+        {
+            "title": "321 CEO, Gaurav Singh, explains what it takes to build teacher capacity",
+            "link": "http://www.teacherplus.org/building-teacher-capacity/",
+            "image": "./img/resources/building-teacher-capacity.jpg",
+            "date": 'MAR 2020',
+            "author": 'Teacher Plus'
+        },
+        {
+            "title": "321 Foundation in Top 100 social Innovations of the world",
+            "link": "https://hundred.org/en/innovations/321-education-foundation",
+            "image": "./img/resources/hundred-innovations.jpg",
+            "date": 'MAR 2020',
+            "author": 'Hundred.org'
+        }
+    ];
+    var updatelist = [
+        {
+            "title": "Why India must support Its teachers if it wants to help students",
+            "link": "https://www.thequint.com/news/education/this-teachers-day-support-the-teacher-to-help-students",
+            "image": "./img/resources/support-teachers.jpg",
+            "date": 'SEP 2020',
+            "author": 'Mohit Gurnani'
+        },
+        {
+            "title": "How can teachers better engage students online?",
+            "link": "https://www.linkedin.com/pulse/how-can-teachers-better-engage-students-online-radhika-murthy/?trackingId=%2BMt2okDJZNLBSyrXdLCY7w%3D%3D",
+            "image": "./img/resources/better-engagement.jpg",
+            "date": 'AUG 2020',
+            "author": 'Radhika Murthy'
+        },
+        {
+            "title": "321's Learning Showcases - What we have learned from our \"learning exhibitions\"",
+            "link": "https://www.linkedin.com/pulse/321s-learning-showcases-what-we-have-learned-from-our-gunjali-singh/?trackingId=XjsSteSt9MyJPNh2xyLlwQ%3D%3D",
+            "image": "./img/resources/learning-showcase.jpg",
+            "date": 'JUN 2020',
+            "author": 'Gunjali Singh'
+        },
+        {
+            "title": "Tripled the number of students at grade level proficiency! See our Impact report!",
+            "link": "https://bit.ly/321Impact_C",
+            "image": "./img/resources/grade-level-proficiency.jpg",
+            "date": 'JUN 2020',
+            "author": '321 Education'
+        },
+        {
+            "title": "See how 321 came to the rescue of our schools when Covid brought everything to a standstill!",
+            "link": "https://drive.google.com/file/d/1r6-JecB6EjIeLRDC_EIicZkO6kIkGVHp/view?usp=sharing",
+            "image": "./img/resources/covid-321-schools.jpg",
+            "date": 'JUN 2020',
+            "author": '321 Education'
+        }
+    ];
+
+    function addResources() {
+        var resources_html_content = '';
+        for (var i=0; i < resourcelist.length;i++){
+            resources_html_content += `<div class="card-container swiper-slide"><a href="` + resourcelist[i]['link'] + `" target="_blank"><div class="card col-xs-12 nopad"><div class="imgcont col-xs-12 nopad" style="background-image: url('` + resourcelist[i]['image'] + `')"><p class="date p3 nomar">` + resourcelist[i]['date'] + `</p></div><div class="content col-xs-12  pad25"><h3 class="fw7 nomart p3xs">` + resourcelist[i]['title'] + `</h3><p class="p3 fw5">` + resourcelist[i]['author'] + `</p></div></div></a></div>`;
+        }
+        $('#resources #items').html(resources_html_content);
+    }
+    function addUpdates() {
+        var updates_html_content = '';
+        for (var i=0; i < updatelist.length;i++){
+            updates_html_content += `<div class="card-container swiper-slide"><a href="` + updatelist[i]['link'] + `" target="_blank"><div class="card col-xs-12 nopad"><div class="imgcont col-xs-12 nopad" style="background-image: url('` + updatelist[i]['image'] + `')"><p class="date p3 nomar">` + updatelist[i]['date'] + `</p></div><div class="content col-xs-12  pad25"><h3 class="fw7 nomart p3xs">` + updatelist[i]['title'] + `</h3><p class="p3 fw5">` + updatelist[i]['author'] + `</p></div></div></a></div>`;
+        }
+        $('#updates #items').html(updates_html_content);
+    }
+    function addSlider() {
+        var swiper1 = new Swiper('#resources .swiper-container', {
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+            spaceBetween: 30,
+            nextButton: '.resources.swiper-button-next',
+            prevButton: '.resources.swiper-button-prev',
+            grabCursor: true,
+            navigation: {
+                nextEl: '.resources.swiper-button-next',
+                prevEl: '.resources.swiper-button-prev',
+            },
+            pagination: '.resources-pagination',
+            paginationClickable: true,
+            speed: 2000,
+            breakpoints: {
+                768: {
+                    spaceBetween: 15,
+                    slidesPerGroup: 1,
+                    slidesPerView: 1,
+                    freeMode: true,
+                    loop: false,
+                }
+            },
+        });
+        var swiper2 = new Swiper('#updates .swiper-container', {
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+            spaceBetween: 30,
+            nextButton: '.updates.swiper-button-next',
+            prevButton: '.updates.swiper-button-prev',
+            grabCursor: true,
+            navigation: {
+                nextEl: '.updates.swiper-button-next',
+                prevEl: '.updates.swiper-button-prev',
+            },
+            pagination: '.updates-pagination',
+            paginationClickable: true,
+            speed: 2000,
+            breakpoints: {
+                768: {
+                    spaceBetween: 15,
+                    slidesPerGroup: 1,
+                    slidesPerView: 1,
+                    freeMode: true,
+                    loop: false,
+                }
+            },
+        });
+    }
+
+    addResources();
+    addUpdates();
+    addSlider();
+});
