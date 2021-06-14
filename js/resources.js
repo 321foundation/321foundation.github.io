@@ -1,6 +1,20 @@
 $(document).ready(function () {
     var resourcelist = [
         {
+            "title": "The Class of Covid: India’s year-long closure of schools takes its toll on children’s education",
+            "link": "https://www.telegraph.co.uk/global-health/science-and-disease/class-covid-indias-year-long-closure-schools-takes-toll-childrens/",
+            "image": "./img/resources/ugam-partnership.jpg",
+            "date": 'APR 2021',
+            "author": 'The Telegraph'
+        },
+        {
+            "title": "Invest now to repair ‘huge’ learning loss, educators urge",
+            "link": "https://www.ft.com/content/b3d0cc12-61de-4143-91a6-ab9f98bbc7a9",
+            "image": "./img/resources/invest-now.jpg",
+            "date": 'APR 2021',
+            "author": 'Financial TImes'
+        },
+        {
             "title": "Ugam and 321 Education Foundation bridge the learning gap for underprivileged children in India",
             "link": "https://indiaeducationdiary.in/ugam-and-321-education-foundation-bridge-the-learning-gap-for-underprivileged-children-in-india/",
             "image": "./img/resources/ugam-partnership.jpg",
