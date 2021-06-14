@@ -3,7 +3,7 @@ $(document).ready(function () {
         {
             "title": "The Class of Covid: India’s year-long closure of schools takes its toll on children’s education",
             "link": "https://www.telegraph.co.uk/global-health/science-and-disease/class-covid-indias-year-long-closure-schools-takes-toll-childrens/",
-            "image": "./img/resources/ugam-partnership.jpg",
+            "image": "./img/resources/class-covid.jpg",
             "date": 'APR 2021',
             "author": 'The Telegraph'
         },
