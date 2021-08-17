@@ -7,8 +7,13 @@
         @include bgdef
         .content
             animation: appear 0.5s ease-in forwards
+        h1
+            text-shadow: 0 0 7px rgba(0,0,0,0.2)
     .topbanner.videoon
         padding: 0
+
+.cardeous
+    box-shadow: 0 0 7px rgba(0,0,0,0.2)
 
 .birddesc, .testimon
     overflow: hidden
@@ -43,7 +48,7 @@
         margin-bottom: 30px
         box-shadow: 0 0 20px rgba(0,0,0,0.1)
         .imgvert
-            height: 485px
+            height: 385px
             background-color: #F7F7F7
             @include bgdef
         .imgvert.big
@@ -151,12 +156,14 @@
 
 .programpage
     .topbanner
-        padding-bottom: 200px
+        padding-top: 100px
+        padding-bottom: 100px
         overflow: hidden
         .birds
             background-image: url('img/desktop-program-birds-1.svg')
             top: 0
             background-size: cover
+            opacity: 0.6
     #programs
         .content.numlist hr
             margin: 25px 0
@@ -240,7 +247,9 @@
                 width: 77.5%
                 margin-left: 7.5%
             .hr30
-                margin: 40px 0
+                margin: 25px 0
+        .videxp
+            min-height: 500px
 
 .partners
     .imgcont.single
@@ -255,7 +264,7 @@
     h2 a:focus
         color: #000
 
-#resources, #updates
+#resources, #updates, #timeline
     .card-container
         transition: all 0.5s ease-in-out
         a:hover, a:focus, a.linked
@@ -288,11 +297,10 @@
         &:before
             display: none
 
-#resources, #updates
+#resources, #updates, #timeline
     .swiper-slider
         .swiper-button-next, .swiper-button-prev
-            color: #FFF
-            background: #000
+            background-color: #b0c4f3
             width: 30px
             height: 30px
             background-size: 10px
@@ -491,7 +499,6 @@
         .card-container 
             .card 
                 .content
-                    padding: 15px
                     .but a
                         &:hover, &:focus
                             color: #FFF

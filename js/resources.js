@@ -1,14 +1,21 @@
 $(document).ready(function () {
     var resourcelist = [
         {
-            "title": "The Class of Covid: India’s year-long closure of schools takes its toll on children’s education",
+            "title": "Technology can be a powerful force for educational equity if we want it to be",
+            "link": "https://wendykopp-tfall.medium.com/technology-can-be-a-powerful-force-for-educational-equity-if-we-want-it-to-be-3c26d2ad012f",
+            "image": "./img/resources/educational-equity.jpg",
+            "date": 'JUN 2021',
+            "author": 'Wendy Kopp'
+        },
+        {
+            "title": "The Class of Covid: India's year-long closure of schools takes its toll on children's education",
             "link": "https://www.telegraph.co.uk/global-health/science-and-disease/class-covid-indias-year-long-closure-schools-takes-toll-childrens/",
             "image": "./img/resources/class-covid.jpg",
             "date": 'APR 2021',
             "author": 'The Telegraph'
         },
         {
-            "title": "Invest now to repair ‘huge’ learning loss, educators urge",
+            "title": "Invest now to repair 'huge' learning loss, educators urge",
             "link": "https://www.ft.com/content/b3d0cc12-61de-4143-91a6-ab9f98bbc7a9",
             "image": "./img/resources/invest-now.jpg",
             "date": 'APR 2021',
@@ -58,6 +65,13 @@ $(document).ready(function () {
         }
     ];
     var updatelist = [
+        {
+            "title": "3.2.1 Foundation Annual Report 2020-21",
+            "link": "https://drive.google.com/file/d/1gNJGC4FTEuNoJ3nkIfTtZovWhLRM1nMh/view",
+            "image": "./img/resources/annual-report.jpg",
+            "date": 'AUG 2021',
+            "author": '3.2.1 Foundation'
+        },
         {
             "title": "Why India must support Its teachers if it wants to help students",
             "link": "https://www.thequint.com/news/education/this-teachers-day-support-the-teacher-to-help-students",
