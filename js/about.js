@@ -10,7 +10,7 @@ $(document).ready(function () {
             nextEl: '.timeline.swiper-button-next',
             prevEl: '.timeline.swiper-button-prev',
         },
-        pagination: '.timeline-pagination',
+        pagination: '.timeline.swiper-pagination',
         paginationClickable: true,
         speed: 2000,
         breakpoints: {

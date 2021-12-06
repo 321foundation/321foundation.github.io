@@ -79,10 +79,10 @@
                 .content.no-height
                     min-height: initial    
     .donate
-        .cardcont
-            .card
-                .imgvert
-                    height: 450px
+        .card
+            .imgvert
+                height: 900px
+                @include bgdef
     
 @media(min-width: 992px) and (max-width: 1199px)
     #programs, #impact, #ourteam, #partners
@@ -311,6 +311,11 @@
             margin: 70px auto
             width: 60px
 
+    .capepage 
+        .vertlist
+            .videxp
+                min-height: 250px
+
     .justimg
         height: 500px
 
@@ -361,12 +366,15 @@
     .landing 
         .topbanner
             background-image: url('img/landbannerxs.jpg')
-            padding: 140px 0 75px
+            padding: 200px 0 25px
             text-align: center
             min-height: initial
             img
                 text-align: center
                 margin: 0 auto
+            h1
+                text-shadow: 0 0 7px rgba(0, 0, 0, 0.3)
+                margin: 0
         .birddesc
             .birds
                 background-image: url(img/landbirdsxs.svg)
@@ -610,6 +618,22 @@
                         height: 200px
                     .content
                         padding: 15px
+
+    .donate
+        .page
+            padding-top: 30px
+            padding-bottom: 30px
+            .titular
+                padding-bottom: 10px
+        .card
+            .imgvert
+                @include bgdef
+                height: 250px
+            .content.pad50
+                padding: 30px
+                .pad50
+                    padding: 30px
+                    margin: 30px -30px -30px
 
 @media (max-width: 340px)
     .about
