@@ -1,6 +1,13 @@
 $(document).ready(function () {
     var resourcelist = [
         {
+            "title": "A lost generation: fears long-running school closures will harm children around the world",
+            "link": "https://telegraph.co.uk/global-health/climate-and-people/lost-generation-fears-indias-long-running-school-closures-will/",
+            "image": "./img/resources/lost-gen.jpg",
+            "date": 'JAN 2022',
+            "author": 'Joe Wallen'
+        },
+        {
             "title": "Technology can be a powerful force for educational equity if we want it to be",
             "link": "https://wendykopp-tfall.medium.com/technology-can-be-a-powerful-force-for-educational-equity-if-we-want-it-to-be-3c26d2ad012f",
             "image": "./img/resources/educational-equity.jpg",
@@ -44,7 +51,7 @@ $(document).ready(function () {
         },
         {
             "title": "321 Education Foundation Is Challenging India\'s Primary Education System",
-            "link": "https://www.jumpstartmag.com/321-foundation-is-taking-on-indias-primary-education-system/",
+            "link": "https://www.jumpstartmag.com/321-education-foundation/",
             "image": "./img/resources/primary-education.jpg",
             "date": 'APR 2020',
             "author": 'JumpStart'
