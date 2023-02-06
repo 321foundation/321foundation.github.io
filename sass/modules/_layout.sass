@@ -142,6 +142,8 @@
         display: none
     .team
         .card
+            .bgww
+                box-shadow: 0 0 7px rgba(0,0,0,.5)
             .imgvert
                 height: 175px
                 @include bgdef
@@ -269,7 +271,7 @@
     h2 a:focus
         color: #000
 
-#resources, #updates, #timeline
+#resources, #updates, #timeline, #journey
     .card-container
         transition: all 0.5s ease-in-out
         a:hover, a:focus, a.linked
@@ -302,7 +304,7 @@
         &:before
             display: none
 
-#resources, #updates, #timeline
+#resources, #updates, #timeline, #journey
     .swiper-slider
         .swiper-button-next, .swiper-button-prev
             background-color: #b0c4f3
@@ -324,6 +326,11 @@
             margin: 0 5px
         .swiper-pagination-bullet-active
             background: #000
+
+#journey
+    .swiper-slider
+        .swiper-button-next, .swiper-button-prev
+            background-color: #d1ffc6
 
 .footer 
     .social-icons 

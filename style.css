@@ -1435,6 +1435,9 @@ h3, .h3 {
 .about .testimon .birds, .resources .testimon .birds {
   display: none;
 }
+.about .team .card .bgww, .resources .team .card .bgww {
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+}
 .about .team .card .imgvert, .resources .team .card .imgvert {
   height: 175px;
   background-size: cover;
@@ -1567,19 +1570,19 @@ h3, .h3 {
   color: #000;
 }
 
-#resources .card-container, #updates .card-container, #timeline .card-container {
+#resources .card-container, #updates .card-container, #timeline .card-container, #journey .card-container {
   transition: all 0.5s ease-in-out;
 }
-#resources .card-container a:hover, #resources .card-container a:focus, #resources .card-container a.linked, #updates .card-container a:hover, #updates .card-container a:focus, #updates .card-container a.linked, #timeline .card-container a:hover, #timeline .card-container a:focus, #timeline .card-container a.linked {
+#resources .card-container a:hover, #resources .card-container a:focus, #resources .card-container a.linked, #updates .card-container a:hover, #updates .card-container a:focus, #updates .card-container a.linked, #timeline .card-container a:hover, #timeline .card-container a:focus, #timeline .card-container a.linked, #journey .card-container a:hover, #journey .card-container a:focus, #journey .card-container a.linked {
   text-decoration: none !important;
   color: initial;
 }
-#resources .card-container .card .imgcont, #updates .card-container .card .imgcont, #timeline .card-container .card .imgcont {
+#resources .card-container .card .imgcont, #updates .card-container .card .imgcont, #timeline .card-container .card .imgcont, #journey .card-container .card .imgcont {
   background-size: cover;
   background-position: center center;
   height: 250px;
 }
-#resources .card-container .card .imgcont .date, #updates .card-container .card .imgcont .date, #timeline .card-container .card .imgcont .date {
+#resources .card-container .card .imgcont .date, #updates .card-container .card .imgcont .date, #timeline .card-container .card .imgcont .date, #journey .card-container .card .imgcont .date {
   position: absolute;
   padding: 5px 10px;
   background: #FED445;
@@ -1587,10 +1590,10 @@ h3, .h3 {
   bottom: 0;
   right: 0;
 }
-#resources .card-container .card:nth-last-child(1), #updates .card-container .card:nth-last-child(1), #timeline .card-container .card:nth-last-child(1) {
+#resources .card-container .card:nth-last-child(1), #updates .card-container .card:nth-last-child(1), #timeline .card-container .card:nth-last-child(1), #journey .card-container .card:nth-last-child(1) {
   margin-bottom: initial;
 }
-#resources .card-container:before, #updates .card-container:before, #timeline .card-container:before {
+#resources .card-container:before, #updates .card-container:before, #timeline .card-container:before, #journey .card-container:before {
   content: "";
   height: 100%;
   width: 100%;
@@ -1599,39 +1602,43 @@ h3, .h3 {
   background: #FFF;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
-#resources .card-container:hover, #updates .card-container:hover, #timeline .card-container:hover {
+#resources .card-container:hover, #updates .card-container:hover, #timeline .card-container:hover, #journey .card-container:hover {
   transform: scale(1.025);
 }
-#resources .card-container.no-box-before:before, #updates .card-container.no-box-before:before, #timeline .card-container.no-box-before:before {
+#resources .card-container.no-box-before:before, #updates .card-container.no-box-before:before, #timeline .card-container.no-box-before:before, #journey .card-container.no-box-before:before {
   display: none;
 }
 
-#resources .swiper-slider .swiper-button-next, #resources .swiper-slider .swiper-button-prev, #updates .swiper-slider .swiper-button-next, #updates .swiper-slider .swiper-button-prev, #timeline .swiper-slider .swiper-button-next, #timeline .swiper-slider .swiper-button-prev {
+#resources .swiper-slider .swiper-button-next, #resources .swiper-slider .swiper-button-prev, #updates .swiper-slider .swiper-button-next, #updates .swiper-slider .swiper-button-prev, #timeline .swiper-slider .swiper-button-next, #timeline .swiper-slider .swiper-button-prev, #journey .swiper-slider .swiper-button-next, #journey .swiper-slider .swiper-button-prev {
   background-color: #b0c4f3;
   width: 30px;
   height: 30px;
   background-size: 10px;
   background-position: center;
 }
-#resources .swiper-slider .swiper-button-next:after, #resources .swiper-slider .swiper-button-prev:after, #updates .swiper-slider .swiper-button-next:after, #updates .swiper-slider .swiper-button-prev:after, #timeline .swiper-slider .swiper-button-next:after, #timeline .swiper-slider .swiper-button-prev:after {
+#resources .swiper-slider .swiper-button-next:after, #resources .swiper-slider .swiper-button-prev:after, #updates .swiper-slider .swiper-button-next:after, #updates .swiper-slider .swiper-button-prev:after, #timeline .swiper-slider .swiper-button-next:after, #timeline .swiper-slider .swiper-button-prev:after, #journey .swiper-slider .swiper-button-next:after, #journey .swiper-slider .swiper-button-prev:after {
   font-size: 15px;
 }
-#resources .swiper-slider .swiper-button-next, #updates .swiper-slider .swiper-button-next, #timeline .swiper-slider .swiper-button-next {
+#resources .swiper-slider .swiper-button-next, #updates .swiper-slider .swiper-button-next, #timeline .swiper-slider .swiper-button-next, #journey .swiper-slider .swiper-button-next {
   right: -60px;
 }
-#resources .swiper-slider .swiper-button-prev, #updates .swiper-slider .swiper-button-prev, #timeline .swiper-slider .swiper-button-prev {
+#resources .swiper-slider .swiper-button-prev, #updates .swiper-slider .swiper-button-prev, #timeline .swiper-slider .swiper-button-prev, #journey .swiper-slider .swiper-button-prev {
   left: -60px;
 }
-#resources .swiper-slider .swiper-pagination, #updates .swiper-slider .swiper-pagination, #timeline .swiper-slider .swiper-pagination {
+#resources .swiper-slider .swiper-pagination, #updates .swiper-slider .swiper-pagination, #timeline .swiper-slider .swiper-pagination, #journey .swiper-slider .swiper-pagination {
   width: 100%;
   margin-bottom: -20px;
   padding-top: 0;
 }
-#resources .swiper-slider .swiper-pagination-bullet, #updates .swiper-slider .swiper-pagination-bullet, #timeline .swiper-slider .swiper-pagination-bullet {
+#resources .swiper-slider .swiper-pagination-bullet, #updates .swiper-slider .swiper-pagination-bullet, #timeline .swiper-slider .swiper-pagination-bullet, #journey .swiper-slider .swiper-pagination-bullet {
   margin: 0 5px;
 }
-#resources .swiper-slider .swiper-pagination-bullet-active, #updates .swiper-slider .swiper-pagination-bullet-active, #timeline .swiper-slider .swiper-pagination-bullet-active {
+#resources .swiper-slider .swiper-pagination-bullet-active, #updates .swiper-slider .swiper-pagination-bullet-active, #timeline .swiper-slider .swiper-pagination-bullet-active, #journey .swiper-slider .swiper-pagination-bullet-active {
   background: #000;
+}
+
+#journey .swiper-slider .swiper-button-next, #journey .swiper-slider .swiper-button-prev {
+  background-color: #d1ffc6;
 }
 
 .footer .social-icons {
