@@ -1545,6 +1545,9 @@ h3, .h3 {
 .partners .imgcont.single img {
   width: 57.5%;
 }
+.partners .imgcont.single img.large {
+  width: 80%;
+}
 
 .findlinks h2 {
   padding-bottom: 30px;
