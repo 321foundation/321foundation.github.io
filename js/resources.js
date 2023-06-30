@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var resourcelist = [
+    const resourcelist = [
         {
             "title": "A lost generation: fears long-running school closures will harm children around the world",
             "link": "https://telegraph.co.uk/global-health/climate-and-people/lost-generation-fears-indias-long-running-school-closures-will/",
@@ -71,7 +71,7 @@ $(document).ready(function () {
             "author": 'Hundred.org'
         }
     ];
-    var updatelist = [
+    const updatelist = [
         {
             "title": "3.2.1 Foundation Annual Report 2020-21",
             "link": "https://drive.google.com/file/d/1gNJGC4FTEuNoJ3nkIfTtZovWhLRM1nMh/view",
@@ -117,21 +117,21 @@ $(document).ready(function () {
     ];
 
     function addResources() {
-        var resources_html_content = '';
-        for (var i=0; i < resourcelist.length;i++){
+        let resources_html_content = '';
+        for (let i=0; i < resourcelist.length;i++){
             resources_html_content += `<div class="card-container swiper-slide"><a href="` + resourcelist[i]['link'] + `" target="_blank"><div class="card col-xs-12 nopad"><div class="imgcont col-xs-12 nopad" style="background-image: url('` + resourcelist[i]['image'] + `')"><p class="date p3 nomar">` + resourcelist[i]['date'] + `</p></div><div class="content col-xs-12  pad25"><h3 class="fw7 nomart p3xs">` + resourcelist[i]['title'] + `</h3><p class="p3 fw5">` + resourcelist[i]['author'] + `</p></div></div></a></div>`;
         }
         $('#resources #items').html(resources_html_content);
     }
     function addUpdates() {
-        var updates_html_content = '';
-        for (var i=0; i < updatelist.length;i++){
+        let updates_html_content = '';
+        for (let i=0; i < updatelist.length;i++){
             updates_html_content += `<div class="card-container swiper-slide"><a href="` + updatelist[i]['link'] + `" target="_blank"><div class="card col-xs-12 nopad"><div class="imgcont col-xs-12 nopad" style="background-image: url('` + updatelist[i]['image'] + `')"><p class="date p3 nomar">` + updatelist[i]['date'] + `</p></div><div class="content col-xs-12  pad25"><h3 class="fw7 nomart p3xs">` + updatelist[i]['title'] + `</h3><p class="p3 fw5">` + updatelist[i]['author'] + `</p></div></div></a></div>`;
         }
         $('#updates #items').html(updates_html_content);
     }
     function addSlider() {
-        var swiper1 = new Swiper('#resources .swiper-container', {
+        const swiper1 = new Swiper('#resources .swiper-container', {
             slidesPerView: 3,
             slidesPerGroup: 3,
             spaceBetween: 30,
@@ -155,7 +155,7 @@ $(document).ready(function () {
                 }
             },
         });
-        var swiper2 = new Swiper('#updates .swiper-container', {
+        const swiper2 = new Swiper('#updates .swiper-container', {
             slidesPerView: 3,
             slidesPerGroup: 3,
             spaceBetween: 30,

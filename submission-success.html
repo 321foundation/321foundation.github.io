@@ -97,7 +97,131 @@
             fbq('track', 'PageView');
         </script>
         <noscript><img height="1" width="1"  src="https://www.facebook.com/tr?id=2877230032326235&ev=PageView &noscript=1"/></noscript>
-        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-NNN8W28');</script>
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-NNN8W28');</script><style>
+            *, *:before, *:after {
+              box-sizing: border-box;
+            }
+            html {
+              height: 100%;
+            }
+            a:hover {
+                text-decoration: none;
+            }
+            body {
+              background-color: #fff9e5;
+              height: 100%;
+              font-family: 'Montserrat', Arial, sans-serif;
+            }
+            .text-wrapper {
+              min-height: 100vh;
+              padding: 6rem 0;
+            }
+            .title {
+              font-size: 8rem;
+              font-weight: 700;
+              color: #333;
+              position: relative;
+              text-align: center;
+            }
+            .title img {
+              height: 8rem;
+            }
+            .subtitle {
+              font-size: 3rem;
+              font-weight: 700;
+              color: #333;
+              position: relative;
+              text-align: center;
+            }
+            .buttons {
+                margin: 50px auto;
+                text-align: center;
+            }
+            .buttons a.button {
+                font-weight: 700;
+                border: 2px solid #333;
+                text-decoration: none;            
+                padding: 15px;
+                text-transform: uppercase;
+                color: #333;
+                border-radius: 26px;
+                -webkit-transition: all 0.2s ease-in-out;
+                transition: all 0.2s ease-in-out;
+            }
+            .buttons a.button:hover {
+                background-color: #ffdc67;
+                border-color: #ffdc67;
+                color: #000;
+            }
+            .data-snapshot {
+                background: #FFF;
+                box-shadow: 0 0 4px 0 rgba(0,0,0,0.1);
+                border-radius: 10px;
+                overflow: hidden;
+                padding: 6rem
+            }
+            .graph {
+                padding: 0;
+                text-align: left;
+            }
+            .graph h2 {
+                font-weight: 700;
+                font-size: 2rem;
+                line-height: 34px;
+                letter-spacing: -0.5px;
+            }
+            .graph .p3 {
+                font-size: 1.4rem;
+                opacity: 0.3;
+            }
+            .implist {
+                padding: 0;
+            }
+            .media {
+                text-align: center;
+                padding-bottom: 30px;
+            }
+            .media a .icon {
+                width: 35px;
+                margin: 0 7.5px;
+            }
+            @media (min-width:768px) and (max-width:1024px) {
+                .subtitle {
+                    padding: 20px;
+                }
+            }
+            @media (max-width:767px) {
+                .title {
+                    font-size: 4rem;
+                }
+                .title img {
+                    display: none;
+                }
+                .subtitle {
+                    font-size: 2rem;
+                    font-weight: 300;
+                    text-align: center;
+                }
+                .data-snapshot {
+                    padding: 0;
+                    background: none;
+                    border-radius: 0;
+                    overflow: initial;
+                    box-shadow: none;
+                }
+                .data-snapshot iframe {
+                    height: 250px;
+                    border-radius: 8px;
+                }
+                .graph {
+                    background: #FFF;
+                    padding: 0 20px;
+                }
+                .graph:nth-last-child(1) {
+                    padding-bottom: 20px;
+                }
+            }
+        </style>
     </head>
 
     <body id="page-404">
