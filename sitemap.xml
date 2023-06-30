@@ -9,34 +9,32 @@
 
 <url>
   <loc>https://321-foundation.org/</loc>
-  <lastmod>2022-08-18T12:21:54+00:00</lastmod>
+  <lastmod>2023-06-23T20:02:15+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://321-foundation.org/our-fln-program</loc>
-  <lastmod>2022-08-18T12:21:54+00:00</lastmod>
+  <lastmod>2023-06-23T20:02:15+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://321-foundation.org/about</loc>
-  <lastmod>2022-08-18T12:21:54+00:00</lastmod>
+  <lastmod>2023-06-23T20:02:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://321-foundation.org/updates</loc>
-  <lastmod>2022-08-18T12:21:54+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://321-foundation.org/donate</loc>
-  <lastmod>2022-08-18T12:21:54+00:00</lastmod>
+  <lastmod>2023-06-23T20:02:15+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://321-foundation.org/policy</loc>
-  <lastmod>2022-08-18T12:21:54+00:00</lastmod>
+  <lastmod>2023-06-23T20:02:15+00:00</lastmod>
   <priority>0.80</priority>
 </url>
-
-
+<url>
+  <loc>https://321-foundation.org/donate</loc>
+  <lastmod>2023-06-23T20:02:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
 </urlset>
