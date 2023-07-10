@@ -73,6 +73,13 @@ $(document).ready(function () {
     ];
     const updatelist = [
         {
+            "title": "3.2.1 Foundation Annual Report 2021-22",
+            "link": "https://drive.google.com/file/d/1LfT7kNWcspXyHyCfonGLsw08u8mTb7Wv/view",
+            "image": "./img/donate-banner.jpg",
+            "date": 'AUG 2022',
+            "author": '3.2.1 Foundation'
+        },
+        {
             "title": "3.2.1 Foundation Annual Report 2020-21",
             "link": "https://drive.google.com/file/d/1gNJGC4FTEuNoJ3nkIfTtZovWhLRM1nMh/view",
             "image": "./img/resources/annual-report.jpg",
