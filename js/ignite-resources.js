@@ -70,14 +70,14 @@ $(document).ready(function () {
     function addResources() {
         var resources_html_content = '';
         for (var i=0; i < resourcelist.length;i++){
-            resources_html_content += `<div class="card-container swiper-slide"><a href="` + resourcelist[i]['link'] + `" target="_blank"><div class="card col-xs-12 nopad"><div class="imgcont col-xs-12 nopad" style="background-image: url('` + resourcelist[i]['image'] + `')"><p class="date p3 nomar">` + resourcelist[i]['date'] + `</p></div><div class="content col-xs-12  pad25"><h3 class="fw7 nomart p3xs">` + resourcelist[i]['title'] + `</h3><p class="p3 fw5">` + resourcelist[i]['author'] + `</p></div></div></a></div>`;
+            resources_html_content += `<div class="card-container swiper-slide"><a href="` + resourcelist[i]['link'] + `" target="_blank"><div class="card col-12 p-0"><div class="imgcont col-12 p-0" style="background-image: url('` + resourcelist[i]['image'] + `')"><p class="date p3 m-0">` + resourcelist[i]['date'] + `</p></div><div class="content col-12  pad25"><h3 class="fw7 mt-0 p3xs">` + resourcelist[i]['title'] + `</h3><p class="p3 fw5">` + resourcelist[i]['author'] + `</p></div></div></a></div>`;
         }
         $('#resources #items').html(resources_html_content);
     }
     function addUpdates() {
         var updates_html_content = '';
         for (var i=0; i < updatelist.length;i++){
-            updates_html_content += `<div class="card-container swiper-slide"><a href="` + updatelist[i]['link'] + `" target="_blank"><div class="card col-xs-12 nopad"><div class="imgcont col-xs-12 nopad" style="background-image: url('` + updatelist[i]['image'] + `')"><p class="date p3 nomar">` + updatelist[i]['date'] + `</p></div><div class="content col-xs-12  pad25"><h3 class="fw7 nomart p3xs">` + updatelist[i]['title'] + `</h3><p class="p3 fw5">` + updatelist[i]['author'] + `</p></div></div></a></div>`;
+            updates_html_content += `<div class="card-container swiper-slide"><a href="` + updatelist[i]['link'] + `" target="_blank"><div class="card col-12 p-0"><div class="imgcont col-12 p-0" style="background-image: url('` + updatelist[i]['image'] + `')"><p class="date p3 m-0">` + updatelist[i]['date'] + `</p></div><div class="content col-12  pad25"><h3 class="fw7 mt-0 p3xs">` + updatelist[i]['title'] + `</h3><p class="p3 fw5">` + updatelist[i]['author'] + `</p></div></div></a></div>`;
         }
         $('#updates #items').html(updates_html_content);
     }
