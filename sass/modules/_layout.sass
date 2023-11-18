@@ -16,7 +16,7 @@
     box-shadow: 0 0 7px rgba(0,0,0,0.2)
 
 .birddesc, .testimon
-    overflow: hidden
+    overflow: d-none
     .container
         z-index: 2
     .birds
@@ -38,22 +38,24 @@
         box-shadow: 0 0 20px rgba(0,0,0,0.1)
         .career
             clear: both
-        .career
 
 .cardcont
     .titular
         h1
             margin-bottom: 20px
-    .card
+    .card, .cards
         margin-bottom: 30px
         box-shadow: 0 0 20px rgba(0,0,0,0.1)
         .imgvert
-            height: 385px
+            min-height: 385px
+            height: calc(100vh - 200px)
             background-color: #F7F7F7
             @include bgdef
         .imgvert.big
             height: 525px
         .content
+            min-height: 385px
+            height: calc(100vh - 200px)
             h1:nth-child(1)
                 margin-bottom: 20px
         .imgcont.graph
@@ -165,7 +167,7 @@
     .topbanner
         padding-top: 100px
         padding-bottom: 100px
-        overflow: hidden
+        overflow: d-none
         .birds
             background-image: url('img/desktop-program-birds-1.svg')
             top: 0
@@ -229,10 +231,13 @@
 
 .capepage
     .cardcont 
-        .card:nth-last-child(1)
+        .cards:nth-last-child(1)
             margin-bottom: 0
             .content
                 animation: appear 0.5s ease-in forwards
+                display: flex
+                flex-direction: column
+                justify-content: center
                 .cape-logo
                     height: 185px
                     width: 270px
@@ -252,7 +257,8 @@
                 width: 15%
             .text
                 width: 77.5%
-                margin-left: 7.5%
+                margin-left: 0
+                float: none
             .hr30
                 margin: 25px 0
         .videxp
@@ -309,11 +315,12 @@
 #resources, #updates, #timeline, #journey
     .swiper-slider
         .swiper-button-next, .swiper-button-prev
-            background-color: #b0c4f3
+            background-color: #e6eaf1
             width: 30px
             height: 30px
             background-size: 10px
             background-position: center
+            border-radius: 50%
             &:after
                 font-size: 15px
         .swiper-button-next
@@ -336,11 +343,11 @@
 
 .footer 
     .social-icons 
-        text-align: right
-        padding-bottom: 40px
+        display: flex
+        gap: 10px
+        justify-content: space-between
         a 
-            display: inline-block
-            padding-left: 15px
+            display: flex
             svg
                 width: 25px
                 height: 25px
@@ -364,7 +371,7 @@
                 text-transform: capitalize
     .shivamsonidev
         text-align: right
-        padding: 50px 15px 0 15px
+        padding: 40px 0 0
         p
             display: inline-block
             margin-right: 5px
