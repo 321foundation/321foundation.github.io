@@ -554,6 +554,11 @@ h3, .h3 {
   letter-spacing: -0.3px;
 }
 
+h3.big {
+  font-size: 32px;
+  line-height: 42px;
+}
+
 .p1 {
   font-size: 24px;
   line-height: 39px;
@@ -1025,7 +1030,7 @@ h3, .h3 {
     min-height: 100vh;
   }
   body.menuopened {
-    overflow: d-none;
+    overflow: hidden;
     height: 100vh;
   }
   .header {
@@ -1262,7 +1267,7 @@ h3, .h3 {
 }
 
 .birddesc, .testimon {
-  overflow: d-none;
+  overflow: hidden;
 }
 .birddesc .container, .testimon .container {
   z-index: 2;
@@ -1439,7 +1444,7 @@ h3, .h3 {
 .programpage .topbanner {
   padding-top: 100px;
   padding-bottom: 100px;
-  overflow: d-none;
+  overflow: hidden;
 }
 .programpage .topbanner .birds {
   background-image: url("img/desktop-program-birds-1.svg");
@@ -1659,7 +1664,6 @@ h3, .h3 {
 }
 .footer .shivamsonidev {
   text-align: right;
-  padding: 40px 0 0;
 }
 .footer .shivamsonidev p {
   display: inline-block;
@@ -1999,6 +2003,9 @@ h3, .h3 {
 @media (min-width: 992px) {
   .landing .topbanner {
     padding-top: calc((100vh - 200px) / 2);
+  }
+  .landing #impact {
+    margin-bottom: -100px;
   }
   .about #banner .birds, .about #whoweare .birds {
     top: 0;
@@ -2388,6 +2395,13 @@ h3, .h3 {
   }
   .landing .findlinks {
     padding-top: 175px;
+  }
+  .landing #impact .content {
+    height: initial;
+    min-height: initial;
+  }
+  .landing #programs {
+    padding-bottom: 0;
   }
   .about .topbanner {
     text-align: center;
